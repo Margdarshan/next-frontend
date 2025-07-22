@@ -11,7 +11,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
-import marglogo from '../assets/img/marglogo.svg';
+import marglogo from '../../public/marglogo.svg';
 import PropTypes from 'prop-types';
 
 const scrollToTop = () => {
