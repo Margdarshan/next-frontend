@@ -1,0 +1,33 @@
+.container {
+  @apply px-10 lg:px-20;
+}
+
+.heroSection {
+  @apply lg:flex-1 lg:max-w-md;
+}
+
+.featuresGrid {
+  @apply lg:flex lg:flex-col lg:items-end mt-8 lg:mt-0;
+}
+
+.cardRow {
+  @apply flex flex-col lg:flex-row gap-4 lg:gap-2 mb-4 lg:mb-2;
+}
+
+.card {
+  @apply w-full transition-all duration-300 ease-in-out;
+  @apply lg:w-60 xl:w-68 2xl:w-80;
+  @apply h-52 lg:h-52 xl:h-56 2xl:h-64;
+  @apply flex flex-col justify-between;
+  @apply p-6 lg:p-8;
+  @apply hover:scale-105 hover:shadow-lg;
+  @apply focus-within:ring-2 focus-within:ring-blue-500 focus-within:ring-offset-2;
+}
+
+.cardDark {
+  @apply bg-slate-900 text-white;
+}
+
+.cardLight {
+  @apply bg-blue-100 text-slate-900;
+}

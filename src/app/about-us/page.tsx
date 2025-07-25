@@ -7,11 +7,12 @@ const Loading = lazy(() => import('../../core/helpers/pageLoader/Loading'));
 // const NewMentors = lazy(() => import('./NewMentors'));
 const AboutHeader = lazy(() => import('./aboutHeader'));
 const AboutPhotos = lazy(() => import('./aboutPhotos'));
-// const AboutQuote = lazy(() => import('./AboutQuote'));
-// const AboutStory = lazy(() => import('./AboutStory'));
-// const AboutStats = lazy(() => import('./AboutStats'));
-// const AboutFeatures = lazy(() => import('./AboutFeatures'));
-// const AboutContact = lazy(() => import('./AboutContact'));
+const AboutQuote = lazy(() => import('./aboutQuote'));
+const AboutStory = lazy(() => import('./aboutStory'));
+const AboutStats = lazy(() => import('./AboutStats'));
+const AboutFeatures = lazy(() => import('./aboutFeatures'));
+const AboutTeamMembers = lazy(() => import('./aboutTeamMembers'));
+const AboutContact = lazy(() => import('./aboutContact'));
 
 // Metadata for the page (App Router way)
 export const metadata = {
@@ -39,14 +40,12 @@ const About = () => {
       <Suspense fallback={<Loading />}>
         <AboutHeader />
         <AboutPhotos />
-        {/* <AboutQuote />
+        <AboutQuote />
         <AboutStory />
         <AboutStats />
         <AboutFeatures />
-        <NewMentors />
-        <div id="contact-page">
-          <AboutContact />
-        </div> */}
+        <AboutTeamMembers />
+        <AboutContact />
       </Suspense>
     </div>
   );

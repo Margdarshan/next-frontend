@@ -11,15 +11,9 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaYoutube } from "react-icons/fa";
+import { scrollToTop } from '@/core/helpers/scrollToTop';
 import marglogo from '../../public/marglogo.svg';
 import PropTypes from 'prop-types';
-
-const scrollToTop = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth',
-  });
-};
 
 const address = 'Vijay Nagar Square, Indore, Madhya Pradesh, 452010';
 // Encode special characters in the address for proper URL formatting

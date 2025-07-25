@@ -1,4 +1,3 @@
-// components/About/AboutPhotos.jsx
 "use client";
 
 import React from 'react';
