@@ -1,0 +1,48 @@
+@keyframes fade458 {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.25;
+  }
+}
+
+.loader {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  border-radius: 10px;
+}
+
+.loader div {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 8%;
+  height: 24%;
+  background: #ccc;
+  border-radius: 50px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fade458 1s linear infinite;
+}
+
+.loader div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: -0.1s;
+}
+
+.loader div:nth-child(3) {
+  animation-delay: -0.2s;
+}
+
+.loader div:nth-child(4) {
+  animation-delay: -0.3s;
+}
+
+.loader div:nth-child(5) {
+  animation-delay: -0.4s;
+}
